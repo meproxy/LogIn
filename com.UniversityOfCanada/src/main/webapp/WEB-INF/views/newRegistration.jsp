@@ -13,10 +13,16 @@ body {
 	background-color: rgb(255, 255, 153);
 }
 
-.clearfix::after {
-	content: "";
-	clear: both;
-	display: table;
+a:link , a:visited, a:active{
+  color: white;
+  background-color: rgb(0, 0, 102);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+a:hover {
+color: red;
 }
 
 .head {
@@ -72,15 +78,31 @@ th, td {
 	border-bottom-left-radius: 100px;
 }
 
-.foot {
+.foot1 {
 	text-align: center;
 	background-color: rgb(0, 0, 102);
 	color: white;
-	font-size: 2opx;
+	font-size: 22px;
+	font-weight: bold;
+	border-radius: 50px;
+	padding: 20px;
+	border: 2px solid white;
+}
+
+.foot {
+	text-align: center;
+	background-color: red;
+	color: white;
+	font-size: 20px;
 	font-weight: bold;
 	border-radius: 50px;
 	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 2px solid white;
 }
+
+
 
 .footer {
 	text-align: center;
@@ -117,12 +139,14 @@ th, td {
 			</tr>
 		</table>
 		<div style="text-align: center;">
-			<input class="foot" type="submit" value="SAVE" />
+			<input class="foot1" type="submit" value="Save" />
 		</div>
 	</form>
+	<pre>
+	</pre>
 	<div style="text-align: center;">
 		<form action="logOut" method="post">
-			<input class="foot" type="submit" value="LogOut" />
+			<input class="foot" type="submit" value="Log Out" />
 		</form>
 	</div>
 

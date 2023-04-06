@@ -13,11 +13,6 @@ body {
 	background-color: rgb(255, 255, 153);
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 .head {
 	text-align: center;
 	color: rgb(0, 0, 102);
@@ -62,6 +57,17 @@ th,td {
 	padding: 10px;
 }
 
+a:link , a:visited, a:active{
+  color: white;
+  background-color: rgb(0, 0, 102);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+a:hover {
+color: red;
+}
 
 .inputs {
 	text-align: center;
@@ -95,8 +101,8 @@ th,td {
 			<td><%=res.getString(3)%></td>
 			<td><%=res.getString(4)%></td>
 			<td><%=res.getString(5)%></td>
-			<td><a href="UpdateRegistration?name=<%=res.getString(1)%>&fathersName=<%=res.getString(2)%>&email=<%=res.getString(3)%>&address=<%=res.getString(4)%>&contact=<%=res.getString(5)%>">Update</a></td>
-			<td><a href="DeleteRegistration?email=<%=res.getString(3)%>">Delete</a></td>
+			<td style="font-size: 15px"><a href="UpdateRegistration?name=<%=res.getString(1)%>&fathersName=<%=res.getString(2)%>&email=<%=res.getString(3)%>&address=<%=res.getString(4)%>&contact=<%=res.getString(5)%>">Update</a></td>
+			<td style="font-size: 15px"><a href="DeleteRegistration?email=<%=res.getString(3)%>">Delete</a></td>
 			<!-- No white space here allowed here-->
 		</tr><%}
 		%>

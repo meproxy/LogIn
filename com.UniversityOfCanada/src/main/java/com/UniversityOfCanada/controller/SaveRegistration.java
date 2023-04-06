@@ -26,8 +26,15 @@ public class SaveRegistration extends HttpServlet {
 
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		HttpSession session = request.getSession(false);
+		if(session.getAttribute("email")!=null) {
 		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/newRegistration.jsp");
 		rd.forward(request, response);
+		}
+		else {
+			RequestDispatcher rd = request.getRequestDispatcher("logIn.jsp");
+			rd.forward(request, response);
+		}
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

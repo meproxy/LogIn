@@ -24,11 +24,13 @@
 					<td><input class="inputs" type="password" name="password" /></td>
 				</tr>
 			</table>
-			
+
 		</div>
-		<div style="text-align: center;  margin:40px;">
-				<input style="text-align: center; background-color:rgb(0, 0, 102); color: white; font-size: 25px; font-weight: bold; border-radius: 50px; padding: 10px" type="submit" value="Log In" />
-			</div>
+		<div style="text-align: center; margin: 40px;">
+			<input
+				style="text-align: center; background-color: red; color: white; font-size: 20px; font-weight: bold; border-radius: 50px; padding: 10px; padding-left: 20px; padding-right: 20px; border: 2px solid white;"
+				type="submit" value="Log In" />
+		</div>
 	</form>
 	<div class="footer">
 		<%
