@@ -1,0 +1,10 @@
+
+body {
+	background-color: rgb(204, 204, 255);
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
