@@ -10,26 +10,24 @@
 </head>
 <body>
 	<h2 class="head">
-		<span style="color: red">L</span>og <span style="color: red">I</span>n
+		<span
+			style="color: rgb(51, 133, 255); font-size: 50px; font-family: sans-serif;">W</span>elcome
 	</h2>
 	<form action="verifyLogIn" method="post">
 		<div class="clearfix" class="log">
 			<table>
 				<tr>
-					<td>User Name</td>
+					<td style="font-size: 25px; padding-right: 0px">Email&nbsp;&nbsp;-</td>
 					<td><input class="inputs" type="text" name="email" /></td>
 				</tr>
 				<tr>
-					<td>Password</td>
+					<td style="font-size: 25px; padding-right: 0px">Password&nbsp;&nbsp;-</td>
 					<td><input class="inputs" type="password" name="password" /></td>
 				</tr>
 			</table>
-
 		</div>
 		<div style="text-align: center; margin: 40px;">
-			<input
-				style="text-align: center; background-color: red; color: white; font-size: 20px; font-weight: bold; border-radius: 50px; padding: 10px; padding-left: 20px; padding-right: 20px; border: 2px solid white;"
-				type="submit" value="Log In" />
+			<input class="login in" type="submit" value="LOGIN" />
 		</div>
 	</form>
 	<div class="footer">

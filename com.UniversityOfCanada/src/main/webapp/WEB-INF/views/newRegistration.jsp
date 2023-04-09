@@ -10,30 +10,18 @@
 
 <style type="text/css">
 body {
-	background-color: rgb(255, 255, 153);
+	background-color: rgb(255, 204, 0);
 }
 
-a:link , a:visited, a:active{
-  color: white;
-  background-color: rgb(0, 0, 102);
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 30px;
-}
-
-a:hover {
-color: red;
-}
 
 .head {
 	text-align: center;
-	color: rgb(0, 0, 102);
-	text-shadow: 2px 2px white;
-	margin-top: 50px;
+	margin-top: 10px;
 	margin-bottom: 50px;
 	font-weight: bold;
 	font-size: 45px;
-	font-family: cursive;
+	font: lighter;
+	letter-spacing: 2px;
 }
 
 .log {
@@ -41,52 +29,64 @@ color: red;
 }
 
 table {
-	border: 7px rgb(0, 0, 102);
-	border-style: inset;
+	border: 7px solid black;
 	margin: 20px;
 	font-size: 20px;
-	background-color: rgb(230, 242, 255);
-	height: auto;
-	width: auto;
 	margin-left: auto;
 	margin-right: auto;
+	border-collapse: collapse;
 }
 
+
 tr:nth-child(even) {
-	background-color: rgb(204, 255, 230);
+	background-color: rgb(51,133,255);
 }
 
 tr:nth-child(odd) {
-	background-color: rgb(255, 230, 255);
+	background-color: rgb(255, 204, 0);
 }
 
-th, td {
+td {
 	text-align: center;
 	font-weight: bold;
 	text-decoration: blink;
-	color: rgb(0, 0, 102);
 	font-size: 20px;
-	font-family: sans-serif;
-	padding: 10px;
+	padding: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	font: lighter;
+}
+
+tr:hover {
+	background-color: white;
 }
 
 .inputs {
 	text-align: center;
-	border: 3px solid rgb(0, 0, 102);
-	background-color: rgb(255, 255, 204);
-	border-top-right-radius: 100px;
-	border-bottom-left-radius: 100px;
+	border: 2px solid black;
+	border-radius: 50px;
+	color: black;
 }
 
 .foot1 {
 	text-align: center;
-	background-color: rgb(0, 0, 102);
+	background-color: rgb(51,133,255);
 	color: white;
 	font-size: 22px;
 	font-weight: bold;
 	border-radius: 50px;
-	padding: 20px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 	border: 2px solid white;
+	margin-top: 20px;
+}
+
+input.s:hover {
+	color: red;
+	background-color: white;
+	border: 1px solid black;
+	font-size: 23px;
 }
 
 .foot {
@@ -102,6 +102,18 @@ th, td {
 	border: 2px solid white;
 }
 
+a:link , a:visited, a:active{
+color: white;
+background-color: rgb(51,133,255);
+text-decoration: none;
+}
+
+a:hover{
+	font-size: 25.5px;
+	color: rgb(51,133,255);
+	background-color: white;
+	border: 1px solid black;
+}
 
 
 .footer {
@@ -115,7 +127,7 @@ th, td {
 
 </head>
 <body>
-	<h2 class="head">New Registration</h2>
+	<h2 class="head"><span style="color: rgb(51, 133, 255)">N</span>ew <span style="color: rgb(51, 133, 255)">R</span>egistration</h2>
 	<form action="saveReg" method="post">
 
 		<table>
@@ -139,17 +151,10 @@ th, td {
 			</tr>
 		</table>
 		<div style="text-align: center;">
-			<input class="foot1" type="submit" value="Save" />
+			<input class="foot1 s" type="submit" value="SAVE" />
 		</div>
 	</form>
-	<pre>
-	</pre>
-	<div style="text-align: center;">
-		<form action="logOut" method="post">
-			<input class="foot" type="submit" value="Log Out" />
-		</form>
-	</div>
-
+	
 	<div class="footer">
 		<%
 		if (request.getAttribute("msg") != null) {

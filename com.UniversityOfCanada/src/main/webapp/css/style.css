@@ -1,64 +1,47 @@
 @charset "ISO-8859-1";
 
 body {
-	background-color: rgb(255, 255, 153);
+	background-color: rgb(255, 204, 0);
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 .head {
 	text-align: center;
-	color: rgb(0, 0, 102);
-	text-shadow: 2px 2px white;
 	margin-top: 100px;
 	margin-bottom: 50px;
 	font-weight: bold;
 	font-size: 45px;
-	font-family: cursive;
+	font: lighter;
+	letter-spacing: 3px;
 }
 
 .log {
 	align-content: center;
-	}
+}
 
 table {
-	border: 7px rgb(0, 0, 102);
-	border-style: inset;
-	margin: 20px;
 	font-size: 20px;
-	background-color: rgb(230, 242, 255);
-	height: auto;
-	width: auto;
+	background-color: rgb(51, 133, 255);
 	margin-left: auto;
 	margin-right: auto;
-}
-
-tr:nth-child(even) {
-	background-color: rgb(204, 255, 230);
-}
-tr:nth-child(odd){
-	background-color: rgb(255, 230, 255);
+	border-radius: 80px;
+	border-collapse: collapse;
 }
 
 td {
 	text-align: center;
 	font-weight: bold;
-	text-decoration: blink;
-	color: rgb(0, 0, 102);
-	font-size: 20px;
-	font-family: sans-serif;
-	padding: 10px;
+	padding: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	font: lighter;
 }
 
 .inputs {
 	text-align: center;
-	border: 3px solid rgb(0, 0, 102);
-	background-color: rgb(255, 255, 204);
-	border-top-right-radius: 100px;
-	border-bottom-left-radius: 100px;
+	font-size: 20px;
+	border: 2px solid black;
+	border-radius: 50px;
+	color: black;
 }
 
 .footer {
@@ -66,4 +49,24 @@ td {
 	color: rgb(255, 26, 26);
 	font-weight: bold;
 	font-size: 25px;
+}
+
+.login {
+	text-align: center;
+	background-color: red;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 50px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+input.in:hover {
+	color: red;
+	background-color: white;
+	font-size: 21px;
 }
